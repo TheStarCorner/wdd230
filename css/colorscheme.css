@@ -1,0 +1,150 @@
+/* YOU WILL EDIT ALL THE COLORS BELOW */
+:root {
+    /* Normal Colors */
+    --background-color: rgb(240, 93, 35);
+    --alt-background-color:rgb(59, 28, 50);
+    --primary-color: rgb(255, 188, 66);
+    --alt-primary-color: rgb(46, 196, 182);
+
+    /* Dark Mode Colors */
+    --dark-background-color: rgb(52, 62, 81);
+    --dark-alt-background-color: rgb(43, 86, 83);
+    --dark-primary-color: rgb(253, 197, 112);
+    --dark-alt-primary-color: rgb(140, 30, 3);
+}
+
+html, main {
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+main {
+    font-size: 62.5%;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-family: 'Rubik', sans-serif; /* EDIT */
+}
+
+main h1 {
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    text-decoration: underline;
+    text-align: center;
+    font-family: 'Noto Serif', serif;  /* EDIT */
+}
+
+main h2 {
+    font-size: 1.75rem;
+    font-family: 'Noto Serif', serif; /* EDIT */
+}
+
+main button {
+    font-size: 1.15rem;
+    padding: 0.75rem 1.5rem;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background-color: var(--alt-background-color);
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;  /* EDIT */
+}
+
+main button:hover {
+    background-color: var(--background-color);
+}
+
+main > div {
+    text-align: left;
+    font-size: 1.15rem;
+    margin: 1rem auto;
+    max-width: 750px;
+    border-top: 1px solid var(--alt-background-color);
+}
+
+main > div:first-of-type {
+    border-top: 0px transparent;
+}
+
+main div .color-wrapper .color {
+    width: 100%;
+    height: 150px;
+    margin: 0.75rem 0;
+    border: 1px solid var(--primary-color);
+}
+
+main > div:nth-of-type(1), main > div:nth-of-type(2) {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+}
+
+main > div:nth-of-type(1) h2, main > div:nth-of-type(2) h2 {
+    grid-row: 1;
+    grid-column: 1/5;
+}
+
+main > div:nth-of-type(1) .color-wrapper:nth-of-type(1) .color {
+    background-color: var(--background-color);
+}
+
+main > div:nth-of-type(1) .color-wrapper:nth-of-type(2) .color {
+    background-color: var(--alt-background-color);
+}
+
+main > div:nth-of-type(1) .color-wrapper:nth-of-type(3) .color {
+    background-color: var(--primary-color);
+}
+
+main > div:nth-of-type(1) .color-wrapper:nth-of-type(4) .color {
+    background-color: var(--alt-primary-color);
+}
+
+main > div:nth-of-type(2) .color-wrapper:nth-of-type(1) .color {
+    background-color: var(--dark-background-color);
+}
+
+main > div:nth-of-type(2) .color-wrapper:nth-of-type(2) .color {
+    background-color: var(--dark-alt-background-color);
+}
+
+main > div:nth-of-type(2) .color-wrapper:nth-of-type(3) .color {
+    background-color: var(--dark-primary-color);
+}
+
+main > div:nth-of-type(2) .color-wrapper:nth-of-type(4) .color {
+    background-color: var(--dark-alt-primary-color);
+}
+
+main.dark-mode {
+    background-color: var(--dark-background-color);
+    color: var(--dark-primary-color);
+}
+
+main.dark-mode button {
+    color: var(--dark-primary-color);
+    border: 1px solid var(--dark-primary-color);
+    background-color: var(--dark-alt-background-color);
+}
+
+main.dark-mode button:hover {
+    background-color: var(--dark-background-color);
+}
+
+main.dark-mode > div {
+    border-top: 1px solid var(--dark-alt-background-color);
+}
+
+main.dark-mode > div:first-of-type {
+    border-top: 0px transparent;
+}
+
+main.dark-mode div .color-wrapper .color {
+    border: 1px solid var(--dark-primary-color);
+}

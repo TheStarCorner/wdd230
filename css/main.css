@@ -3,10 +3,12 @@
     --spacing: 15px;
     --font-size: 1.15rem;
     /* Normal Colors */
-    --background-color: rgb(142, 85, 114);
-    --alt-background-color:rgb(51, 42, 42);
+    --background-color: rgb(240, 93, 35);
+    --alt-background-color:rgb(59, 28, 50);
     --font-color: rgb(0, 0, 0);
     --alt-font-color: rgb(249, 219, 130);
+    --primary-color: rgb(255, 188, 66);
+    --alt-primary-color: rgb(46, 196, 182);
     --border-color: rgb(13, 19, 33);
     /* Dark Mode Colors */
     --dark-background-color:rgb(19, 80, 91);
@@ -113,7 +115,14 @@
   
   }
   
-    
+  #li.target{
+    color: #C1C1C1;
+    font-family: Arial;
+    font-size: 13.5px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0px 90px 0px 0px
+  }
   
   
   section.two-cols.right-column{

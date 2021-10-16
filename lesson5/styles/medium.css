@@ -1,0 +1,74 @@
+:root {
+    --background-color: rgb(240, 93, 35);
+    --font-color: rgb(0, 0, 0);
+    --primary-color: rgb(255, 188, 66);
+    --alt-primary-color: rgb(46, 196, 182);
+    --border-color: rgb(13, 19, 33);
+    --main-color: rgb(133, 57, 111);
+    --default-light: #ffffff;
+    --default-dark: #2f2f2f;
+    --header-font: 'Exo 2', sans-serif;
+    --paragraph-font: 'Comfortaa', sans-serif;
+}
+
+body {
+    grid-template-columns: auto 90% auto;
+}
+
+
+#typo-wrapper {
+    grid-template-columns: 1fr 1fr;
+}
+
+nav {
+	margin: 0 auto;
+	max-width: 760px;
+	background-color: rgb(255, 188, 66);
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+}
+.navigation a:hover {
+	color: white;
+	background-color: black;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+
+/* Media Query for medium+ views */
+@media only screen and (min-width: 32.5em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+}

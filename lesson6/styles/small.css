@@ -1,0 +1,39 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+@media(max-width:768px){
+    .wrap-banner {
+    background-image: url(../assets/neighborhood.jpg);   
+    background-repeat:no-repeat;
+    background-size: 1fr 1fr;
+    background-position:center center;
+    }
+}
+
+
+.homePrestonHero{
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.post {
+    position:relative;
+    margin: 30px auto;
+    padding: 1.5rem;
+    box-shadow: 0 0 5px;
+    background-color: goldenrod;
+    text-align: left;
+    
+}
+
+
+
+
+
+
+

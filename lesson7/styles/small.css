@@ -1,0 +1,189 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+@media(max-width:768px){
+    .wrap-banner {
+    background-image: url(../assets/neighborhood.jpg);   
+    background-repeat:no-repeat;
+    background-size: 1fr 1fr;
+    background-position:center center;
+    }
+}
+
+.gallerygrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    margin: 0;
+  }
+.gallerygrid figure {
+  justify-self: center;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 0 5px #333;
+  
+}
+.gallerygrid img {
+  max-width: 100%;
+  height: auto;
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+.gallerygrid figcaption {
+  text-align: center;
+  padding: 0.5em;
+}
+.gallerygrid figure img[data-src] {
+  filter: blur(0.2em);
+}
+
+
+.homePrestonHero{
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.post {
+    position:relative;
+    margin: 30px auto;
+    padding: 1.5rem;
+    box-shadow: 0 0 5px;
+    background-color: goldenrod;
+    text-align: left;
+    
+}
+
+@media only screen and (min-width: 32.5em) {
+	.pancakefriday {
+		font-size: large;
+		font-weight: bold;
+	}
+	header img {
+		width: 100%;
+		margin-left: 28%;
+	}
+	
+	.headings {
+		margin-left: 5%;
+	}
+
+	.headings h1 {
+		font-size: 2rem;
+	}
+
+	.motto {
+		letter-spacing: 1.5pt;
+		margin-left: 17px;
+	}
+	nav {
+		
+		background: linear-gradient(to bottom,  #555555 0%,#353535 100%); 
+		display: flex;
+	}
+	nav button {
+		display: none;
+	}
+
+	nav ul.hide {
+		display: flex;
+		margin: 0 auto;
+		flex: 1 1 100%;
+		justify-content: space-evenly;
+	}
+	
+	nav ul li a {
+		border: none;
+	}
+
+	nav ul li.activebutton a {
+		box-shadow: 0 -30px 50px rgba(0,0,0,0.3) inset, 0 0 15px #222 inset;
+	}
+	.subhead{
+		font-size: 1.5rem;
+	}
+	.plancontent {
+		max-width: 820px;
+		margin: 0 auto;
+	
+	}
+	.weathersummary {
+		position: absolute;
+		bottom: 2.5%;
+		left: 14%;
+	}
+	.weekforecast {
+		display: block;
+		text-align: center;
+		color: rgb(41, 42, 41);
+		font-size: 1.75rem;
+	}
+
+	.flex {
+		display: flex;
+		flex-flow: row wrap;
+		margin: 25px auto;
+		max-width: 700px;
+		border-right: 1px solid rgb(41, 42, 41);
+		box-shadow: 0 0 5px #333;
+	}
+	
+	.forecastdays {
+		flex: 1 1 auto;
+		border-bottom: 1px solid rgb(41, 42, 41);
+		border-left: 1px solid rgb(41, 42, 41);
+		text-align: center;
+	}
+	.weekday {
+		display: block;
+		padding: 5px;
+		background-color:rgb(253,165,31);
+		border-bottom: 1px solid rgb(41, 42, 41);
+		border-top: 1px solid rgb(41, 42, 41);
+		text-align: center;
+		font-size: 1.25rem;
+		font-weight: bold;
+	}
+	.data {
+		display: block;
+		padding: 0 5px 5px;
+		font-size: 1rem;
+		text-align: center;
+		color:rgb(41, 42, 41);
+	}
+
+	.article img {
+		float: right;
+		width: 350px;
+		height: auto;
+		margin: 1rem;
+	}
+	.contactcontainer {
+		grid-template-columns: 1fr 1fr;
+	}
+	.prestonmap {
+		display: block;
+		width: 50%;
+		height: auto;
+		box-shadow: 0 0 5px #333;
+		margin: 1rem;
+	}
+	
+	.smicon {
+		width: 36px;
+		height: auto;
+	}
+	.gallerygrid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+
+
+
+
+

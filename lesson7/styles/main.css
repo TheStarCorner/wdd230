@@ -56,6 +56,9 @@ h1, h2, h3, h4, th {
 }
 p, span, div, li, td, a {
     font-family: var(--paragraph-font);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
 }
 div.dividerBox{
   display: block;
@@ -66,7 +69,6 @@ div.dividerBox{
   font-style: italic;
 
 }
-
 /* Styles for the header and elements inside the header */
 header {
     z-index: 10;
@@ -222,6 +224,22 @@ nav a:hover, span.navH {
     z-index: 7;
 }
 
+ul{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+
+.hover07 figure img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
 /* Styles for the main and the children of main */
 main {
     padding: 1px 1em;
@@ -262,7 +280,7 @@ section.grid {
 
 section.grid > img {
     
-    width: 73%; /* I just had to match this percent
+    width: 100%; /* I just had to match this percent
                    with the temperature on the logo */
     align-self: center;
     justify-self: center;
@@ -318,6 +336,9 @@ a {
     grid-gap: 30px;
     justify-items: stretch;
     align-items: stretch;
+}
+img.hover{
+    box-shadow: 20px 40px 16px 15px rgba(123, 255, 163, 0.981);
 }
 .color-scheme {
     box-shadow: 2px 2px 5px var(--default-dark);

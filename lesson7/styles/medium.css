@@ -29,6 +29,20 @@ nav {
 	max-width: 760px;
 	background-color: rgb(255, 188, 66);
 }
+
+nav ul.hide {
+	display: flex;
+	margin: 0 auto;
+	flex: 1 1 100%;
+	justify-content: space-evenly;
+}
+
+
+
+figure.hover{
+	box-shadow: 220px 40px 16px 15px rgba(123, 255, 163, 0.981);
+}
+
 .navigation {
 	list-style: none;
 	padding: 0;
@@ -46,7 +60,7 @@ nav {
 	text-decoration: none;
 	color: black;
 	font-weight: 700;
-	transition: 0.5s;
+	transition: 2.5s;
 }
 .navigation a:hover {
 	color: white;
@@ -67,9 +81,12 @@ nav {
 	}
 
 
-.gallerygrid {
+div.gallerygrid {
 	grid-template-columns: 1fr 1fr;
-}
+	display: grid;
+    gap: 1em;
+    margin-bottom: 1em;
+    max-width: 1960px;
 }
 
 figure{

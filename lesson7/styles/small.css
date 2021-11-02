@@ -15,7 +15,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 .gallerygrid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1em;
     margin: 0;
   }
@@ -26,6 +26,8 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
   box-shadow: 0 0 5px #333;
   
 }
+
+
 .gallerygrid img {
   max-width: 100%;
   height: auto;
@@ -34,6 +36,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 }
 .gallerygrid figcaption {
   text-align: center;
+  font-size: large;
   padding: 0.5em;
 }
 .gallerygrid figure img[data-src] {

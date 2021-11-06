@@ -102,6 +102,12 @@ h1, h2, p {margin: 0;}
 	box-shadow: 0 0 30px #333;
 	opacity: .9;
 }
+
+
+/* ------ FORM ------ */
+form label.sbs{
+    padding: .4rem 0;
+}
 /* Hero div from CSS w5 lesson */
 
 .flex {

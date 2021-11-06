@@ -8,6 +8,9 @@ document.write(today);
 
 let nLastModif = Date.parse(document.lastModified);
 
+function adjustRating(rating) {
+  document.getElementById("ratingvalue").innerHTML = rating;
+}
 
 /* credit: Hamburger video */
 const hambutton = document.querySelector('.ham');

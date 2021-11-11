@@ -1,0 +1,54 @@
+body {
+    /*  font-size: 10pt;*/
+      font-family: 'Roboto Mono', monospace;
+      color: rgb(255, 233, 107);
+
+      background-color: rgb(37, 5, 35);
+      line-height: 14pt;
+      padding-left: 5pt;
+      padding-right: 5pt;
+      padding-top: 5pt;
+      margin: auto;
+      font-size: 16px;
+  }
+  .cards {
+    display: flex;
+    flex-flow: wrap;
+  }
+  .cards section {
+    display: flex;
+    flex-flow: column;
+    margin: 15px auto;
+    border: 6.8px dashed rgba(107, 22, 128, 0.613);
+    padding: 10px;
+    background-color: rgba(162, 157, 29, 0.96);
+    width: 95%;
+    align-items: center;
+  }
+  h2 {
+    stroke: purple;
+    stroke-width: 25px;
+    font-size: 160%;
+    margin: 10px 0 5px 0;
+  }
+  p {
+    margin:5px;
+  }
+  .cards section img {
+    max-width: 90%;
+    border-radius: 15px;
+    margin: 0 auto;
+  }
+  
+  @media only screen and (min-width: 700px) {
+    .cards section {
+      width: 45%;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .cards section {
+      width: 20%;
+    }
+  }
+  

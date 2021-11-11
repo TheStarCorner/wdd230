@@ -8,9 +8,6 @@ document.write(today);
 
 let nLastModif = Date.parse(document.lastModified);
 
-function adjustRating(rating) {
-  document.getElementById("ratingvalue").innerHTML = rating;
-}
 
 /* credit: Hamburger video */
 const hambutton = document.querySelector('.ham');
@@ -28,3 +25,33 @@ window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('
 
   classList property - https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
   */
+
+  /* Credit: Virtual Lab */
+  let d = new Date();
+  document.getElementById("copyrightyear").textContent = d.getFullYear();
+
+  const options = {
+    weekday :'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  }
+
+  document.getElementById("currentDate").textContent = d.toLocaleDateString('emg-UK', options);
+
+  function bannerCalculator() {
+    
+    const d = new Date();
+    const today = d.getDay();
+    const pancake = document.querySelector(".pancakeFri");
+    
+    if (today == 5) {
+        pancake.style.display = 'block';
+    
+    }
+    
+    else {
+        pancake.style.display = 'none';
+    }
+    }
+    bannerCalculator();

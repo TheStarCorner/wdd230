@@ -28,6 +28,97 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 }
 
 
+#headhero img {
+	width:100%;
+  }
+  .cities .stamp {
+	position: relative;
+  }
+  .citystats {
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.5);
+	text-align: center;
+	top: 15%;
+	left: 15%;
+	width: 70%;
+	font-size: 80%;
+	text-shadow: 0 0 15px white;
+	padding: 0;
+	margin: 0;
+	line-height: .7em;
+  }
+  .citystats h1 {
+	margin: 5px auto;
+  }
+  .citystats h2 {
+	font-size: 95%;
+  }
+  
+  .cities .stamp img {
+	width:100%;
+  }
+
+  
+.stamp {
+    display: block;
+    margin: 5px auto;
+    border: 5px dotted #fff;
+    padding: 10px;
+    background-color: rgba(137, 174, 243,30%);
+    width: 90%;
+  }
+
+.museum .stamp {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+
+
+.stamp h3 {
+    margin: 0;
+    text-decoration: underline;
+  }
+
+
+.citystats {
+	position: absolute;
+	background-color: rgba(82, 19, 111, 0.5);
+	text-align: center;<body>
+    <h1>CloudEarth</h1>
+
+    <div id="headhero"> 
+      <img src="images/landscape.jpg"> -->
+    </div>
+
+
+      
+      <div id="firsttime">
+        <div id="tab">First Time Assistance</div>
+        <div id="assist">
+          <p>Check out the local data for Preston, Soda Springs, and Fish Haven as you plan your outdoor events.</p>
+          <p>If you have information regarding an upcoming storm or recent storm, enter it on the Storm Center page.</p>
+          <p>Our gallery contains some pretty amazing images of the scenery and weather events of the area.</p>
+        </div>
+      </div>
+    </div>
+    <div class="cities">
+    </div>
+
+
+</body>
+	top: 15%;
+	left: 15%;
+	width: 70%;
+	font-size: 80%;
+	text-shadow: 0 0 15px white;
+	padding: 0;
+	margin: 0;
+	line-height: .7em;
+  }
+
+
+
 .gallerygrid img {
   max-width: 100%;
   height: auto;
@@ -140,6 +231,10 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 		border-bottom: 1px solid rgb(41, 42, 41);
 		border-left: 1px solid rgb(41, 42, 41);
 		text-align: center;
+	}
+
+	.citystats h1{
+		margin: 5px auto;
 	}
 	.weekday {
 		display: block;

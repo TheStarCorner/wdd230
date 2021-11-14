@@ -36,12 +36,34 @@ nav ul.hide {
 	flex: 1 1 100%;
 	justify-content: space-evenly;
 }
+.cities .stamp {
+    position: unset;
+    display: flex;
+    flex-flow: row;
+  }
 
 
-
-figure.hover{
-	box-shadow: 220px 40px 16px 15px rgba(123, 255, 163, 0.981);
+.cities .stamp:nth-child(even) {
+   flex-flow: row-reverse;
 }
+.citystats {
+	position: unset;
+background-color:unset;
+font-size: 120%;
+text-shadow: unset;
+}
+  .cities .stamp img {
+    width:60%;
+  }
+
+
+  .citystats {
+	  position: unset;
+	  background-color:rgb(255, 188, 66);
+	  font-size: 100%;
+	  text-shadow: unset;
+  }
+
 
 .navigation {
 	list-style: none;

@@ -37,6 +37,34 @@ nav ul.hide {
 	justify-content: space-evenly;
 }
 
+.cities .stamp {
+    position: unset;
+    display: flex;
+    flex-flow: row;
+  }
+
+
+.cities .stamp:nth-child(even) {
+   flex-flow: row-reverse;
+}
+.citystats {
+	position: unset;
+background-color:unset;
+font-size: 120%;
+text-shadow: unset;
+}
+  .cities .stamp img {
+    width:60%;
+  }
+
+
+  .citystats {
+	  position: unset;
+	  background-color:rgb(255, 188, 66);
+	  font-size: 100%;
+	  text-shadow: unset;
+  }
+
 
 
 figure.hover{

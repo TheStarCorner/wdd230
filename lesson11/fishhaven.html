@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../weather.ico">
+    <link rel="stylesheet" href="../lesson5/styles/main.css" />
+    <link rel="stylesheet" href="../lesson5/styles/normalize.css" />
+    <link rel="stylesheet" href="../lesson5/styles/small.css" />
+    <link rel="stylesheet" href="../lesson5/styles/medium.css" />
+    <title>Fish Haven</title>
+</head>
+<header>
+    <div id="logo-wrapper">
+          <img src="../assets/weatherpage/cloudearth.png" id="logo" />
+      </div>
+    <h1>CloudEarth</h1>
+    <span> Getting your weather info fast like the wind.</span>
+       </header>
+    <nav>
+      <div class ="pancakeFri" style ="display: none;">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday 
+        at the city park pavilion.</div>
+      <ul>
+        <li>
+          <a href="../index.html">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="preston.html">
+            Preston
+          </a>
+        </li>
+        <li>
+          <a href="sodasprings.html">
+              Soda Springs
+          </a>
+        </li>
+        <li>
+          <a href="fishhaven.html">
+              Fish Haven
+          </a>
+        </li>
+        <li>
+          <a href="stormcenter.html">
+           Storm Center
+          </a>
+        </li>
+        <li>
+            <a href="gallery.html">
+             Gallery
+            </a>
+          </li>
+</nav>
+<body>
+    <h2>Fish Haven</h2>
+    <div class = "herodiv">
+      <img src="assets/fishHero1920.jpg" alt="hero image" sizes="60vw"
+      srcset="assets/fishHero1100.png 1200w,
+      assets/fishHero850.png 800w,
+      assets/fishHero500.png 500w,
+      ">
+    <section class="stats">
+     <h2>Weather Summary</h2>
+     <p>
+      Currently: <span id="sky-condition"></span>
+  </p>
+  <p>
+      High: <span id="high-temp"></span>
+  </p>
+  <p>
+      Wind Chill: <span id="wind-chill"></span>
+  </p>
+  <p>
+      Humidity: <span id="humidity"></span>
+  </p>
+  <p>
+      Wind Speed: <span id="wind-speed"></span>
+  </p>
+  <p>
+    </section>
+    </div>
+    <br>
+    <div class ="herodiv">
+      <h2>5-Day Forecast</h2>
+      <article id="forecast-indicators">
+        <div id="forecast-first-half">
+        </div>
+        <div id="forecast-second-half">
+        </div>
+      <br> 
+    </div>
+  
+    <div class = "herodiv">
+      <div class="post">
+        <h2> Out at Sea! </h2>
+        <p> <i>by Steven D. Peterson</i></p>
+        <br>
+        <div>
+          
+        </div>
+      <p> Last week, I went on a boat ride for the day, and I have CloudEarth to thank! When I looked at the forecast
+        fort the current weather, I knew if it was safe to ride my boat for the day. I introduced this website to my co-workers, 
+        friends, and my family members. I went on another boat ride, this time with my family. They were fascinated when I mentioned how 
+        this website works as a whole.
+      </p>
+      
+        <img class = "postImage"src = "assets/fishHavenBoat1100.png"  srcset="assets/fishHavenBoat1100.png 1200w,
+        assets/fishHavenBoat850.png 800w,
+        assets/fishHavenBoat500.png 500w,
+        "alt = "people talking to each other in forrest">
+    <div class="dividerBox">
+  
+    </div>
+    <div>
+      <br>
+    </div>
+    <div class = "herodiv">
+      <h2> Contact Us</h2>
+      <br>
+      <div>
+        <section class="stats">
+          <p><b>Address:</b> <span id="gender">Fish Haven</span></p>
+          <p><b>City & Zip Code:</b> <span id="age">Fish Haven, ID, 83287</span></p>
+          <p><b>Phone Number:</b> <span id="shots">888-888-8888</span></p>
+          <p><b>Email:</b> <span id="shots">cloudEarthWebsite@tws.com</span></p>
+         </section>
+      </div>
+  
+      <img class = "organize" src ="assets/fishHavenMap.png" alt = "Fish Haven Map">
+    </div>
+  
+  
+</body>
+<script defer src="js/forecast.js"></script>
+
+<footer>
+  <script src="js/weatherapi.js"></script>
+    &copy;<span class="year">2020</span> Ammon Wilson | Idaho |<a target="_blank" href="https://byui.edu/online">BYUI Online Learning</a>
+    <div>
+        <script src="../lesson4/js/main.js"></script>
+      </div>
+</footer>
+</html>

@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Exo+2:wght@800&display=swap');
 
 :root {
-    --background-color: rgb(240, 93, 35);
-    --font-color: rgb(0, 0, 0);
+    --background-color: rgb(215, 38, 56);
+    --font-color: rgb(57, 57, 58);
     --primary-color: rgb(255, 188, 66);
-    --alt-primary-color: rgb(46, 196, 182);
+    --alt-primary-color: rgb(150, 173, 200);
     --border-color: rgb(13, 19, 33);
-    --main-color: rgb(224, 76, 181);
-    --secondary-color: rgb(249, 219, 130);
+    --main-color: rgb(84, 66, 142);
+    --secondary-color: rgb(255, 242, 117);
     --default-light: #ffffff;
     --default-dark: #2f2f2f;
 

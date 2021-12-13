@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Exo+2:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
     --background-color: rgb(215, 38, 56);
@@ -84,7 +84,7 @@ header > span {
     padding-bottom: 1rem;
 }
 h1 {
-    color: var(--default-light);
+    color: var(--alt-primary-color);
     margin-bottom: 0.75rem;
 }
 
@@ -184,6 +184,9 @@ td {
 	background-color: tomato;
 }
 
+li {
+    background-color: rgb(215, 38, 56);
+}
 nav {
     
     padding: 1em 0;
@@ -196,7 +199,7 @@ nav > ul {
     display: grid;
     list-style: none;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    box-shadow: 0 0 10px var(--default-dark);
+    box-shadow: 0 0 10px var (--background-color);
 }
 nav a {
     /* It doesn't work to have this one with the other css block */
@@ -212,9 +215,9 @@ nav a, span.navR {
     text-align: center;
     position: relative;
     text-decoration: none;
-    color: var(--default-light);
-    background-color: var(--default-dark);
-    box-shadow: 0 0 10px var(--default-dark);
+    color: var(--alt-primary-color);
+    background-color: var( --background-color);
+    box-shadow: 0 0 10px var( --background-color);
 }
 nav a.at, nav a:active, span.navA {
     background-color: var(--main-color);

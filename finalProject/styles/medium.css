@@ -2,7 +2,7 @@
     --background-color: rgb(215, 38, 56);
     --font-color: rgb(57, 57, 58);
     --primary-color: rgb(255, 188, 66);
-    --alt-primary-color: rgb(150, 173, 200);
+    --alt-primary-color: #96adc8;
     --border-color: rgb(13, 19, 33);
     --main-color: rgb(84, 66, 142);
     --secondary-color: rgb(255, 242, 117);
@@ -28,7 +28,7 @@ body {
 nav {
 	margin: 0 auto;
 	max-width: 760px;
-	background-color: rgb(46, 196, 182);
+	background-color: rgb(57, 57, 58);
 }
 
 nav ul.hide {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../weather.ico">
+    <link rel="shortcut icon" href="../wilson.ico">
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/small.css" />
@@ -14,12 +14,10 @@
 </head>
 <header>
     <div id="logo-wrapper">
-        <a href="preston-5.html">
-          <img src="../assets/weatherpage/cloudearth.png" id="logo" />
-        </a>
+      <img src="assets/wilsonworkplace.png" id="logo" />
+
       </div>
-    <h1>CloudEarth</h1>
-    <span> Getting your weather info fast like the wind.</span>
+      <h1>WilsonWorkplace</h1>
        </header>
     <nav>
       <div class ="pancakeFri" style ="display: none;">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday 
@@ -32,7 +30,7 @@
           </li>
           <li>
             <a href="city.html">
-              City
+              Rexburg
             </a>
           </li>
           <li>
@@ -52,7 +50,64 @@
           </li>
 </nav>
 <body>
+  <h2>Join Page</h2>
+  <form method="get" action="thankyou.html">
+      <fieldset>
+          <legend> Personal Information</legend>
+         <label class="top"> First Name *<input type="text" name="fname" required> </label>
+         <label class="top"> Last Name *<input type="text" name="lname" required> </label>
+         <label class="top"> Title <input type="text" name="jobtitle" placeholder="Ex: Managing partner" > </label>
+         <label class="top"> Phone <input type="tel" name="phone" placeholder="1235551234">
+         <label class="top"> Email*<input type="email" name="email" placeholder="someone@gmail.com" required>
+         <label class="top"> Business Address <input type="text" name="businessaddress" placeholder="123 Business Str, 83440, ID">
+      </label>
+      </label>
+      </fieldset>
+      <div  class = "herodiv">
+        <h2> Membership Descriptions</h2>
+        <div class = "post">
+          <p> Non-Profit ($100): This tier is great for supporting the company. It is also great for helping those in need as well. 
+            In addition, you will receive an exclusive invite to our special events (Note: The higher tiers will give more options to do in the events.) </p>
+            
+            <p>Bronze ($200): This tier gives you the same tiers as the last one, but you have more things to do at 
+              our events. For those in a different company, you can advertise your company in our website (For this tier, the amount
+              of space of the adversitement will be small. Higher tiers will result in larger views for your advertisement.) </p>
 
+              <p>Silver ($400): For this tier (in addition to the previous tier's benefits), you will  </p>
+        </div>
+  
+      </div>
+      <br>
+      <fieldset>
+          <br>
+          <br>
+          <legend> Memberships</legend>
+          <label> Membership Selection (with Annual Fees)
+            <select name="membershipselect">
+                <option value="">Please Select an Option &#9662</option>
+                <option value="nonprofit"> Non-profit ($100) </option>
+                <option value="bronze"> Bronze ($200) </option>
+                <option value="silver"> Silver ($400) </option>
+                <option value="gold"> Gold ($1000) </option>
+            </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+          <legend> Add a Comment </legend>
+          <form>
+              <div class="form-group">
+                <textarea class="form-control status-box" rows="3" placeholder="Enter your comment here..."></textarea>
+              </div>
+            </form>
+            </div>
+          </div>
+          </label>
+
+      <input type="submit" value="Submit your job request" class="submitBtn">
+
+      </fieldset>
+  </form> 
 
 
 </body>
@@ -61,7 +116,6 @@
     <div>
         <script defer src="../lesson9/js/towndata.js"></script>
       <script src="js/main.js"></script>
-      <!-- <script defer src="./js/lazyload.js"></script> -->
       <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     </div>
 </footer>

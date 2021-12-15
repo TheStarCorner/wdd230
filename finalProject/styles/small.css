@@ -60,6 +60,17 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     text-align: left;
     
 }
+.postcontact {
+    position:relative;
+    margin: 30px auto;
+    padding: 1.5rem;
+    box-shadow: 0 0 5px;
+    background-color:rgb(246, 96, 96);
+    text-align: center;
+	font-size: auto, 1fr;
+    
+}
+
 
 @media only screen and (min-width: 32.5em) {
 	.pancakefriday {

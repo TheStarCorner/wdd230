@@ -89,9 +89,21 @@ h1 {
 }
 
 /* Hero div from CSS w5 lesson */
-.herodiv {margin: 10px auto; position: relative;}
+.herodiv {margin: 10px auto; margin: 10px auto;}
 h1, h2, p {margin: 0;}
 
+.divleft {
+    display: grid;
+    margin: 10px auto;
+    margin: 10px auto;
+    
+
+}
+
+herodiv2{
+    margin: 10px auto;
+    align-content: center;
+}
 .stats {
 	position: absolute;
 	top: 25px;
